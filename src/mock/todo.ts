@@ -1,6 +1,6 @@
-import { Todo } from "../components/row"
+import { ITodo } from "../types"
 
-export const data: Todo[] = [
+export const data: ITodo[] = [
     {
         id: "0",
         task: "criar os componentes",
