@@ -9,5 +9,5 @@ export interface ITodo {
 export type PropsAddTodo = {
     task: string
     handleSubmitTodo: (e: FormEvent) => void
-    handleChangeInput: (e: ChangeEvent) => void
+    handleChangeInput: (e: ChangeEvent<HTMLInputElement>) => void
 }

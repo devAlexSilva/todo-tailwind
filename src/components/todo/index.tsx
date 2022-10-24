@@ -22,7 +22,7 @@ export const Todo = () => {
     setTodos(updatedTodo)
   }
 
-  const handleChangeInput = (e: ChangeEvent) => {
+  const handleChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
     setTask(e.target.value)
   }
 
