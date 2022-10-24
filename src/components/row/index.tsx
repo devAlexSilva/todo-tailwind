@@ -11,7 +11,7 @@ export const Row = (props: Todo) => {
   return (
     <article
       className={`
-    flex w-full p-4 mb-2 justify-between items-center
+    flex w-full min-w-full shadow-lg p-4 mb-2 justify-between items-center
     ${isCompleted ? "bg-gray-400" : "bg-green-300"}
     `}
     >
@@ -34,7 +34,7 @@ export const Row = (props: Todo) => {
         <input
           type="checkbox"
           aria-label="marcar to-do como completo"
-          className={`form-checkbox h-7 w-7`}
+          className='h-7 w-7'
           checked={isCompleted}
           onChange={() => updateTodo(id)}
         />

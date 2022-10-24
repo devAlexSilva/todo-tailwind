@@ -49,18 +49,19 @@ export const Todo = () => {
   }
 
   return (
-    <section about="seção dos to-do">
+    <section about="seção dos to-do" className="w-10/12 lg:w-1/2 max-w-2xl flex flex-col items-center">
       <AddTodo
         task={task}
         handleChangeInput={handleChangeInput}
         handleSubmitTodo={handleSubmitTodo}
       />
-      <ul>
+      <ul className='w-full'>
         {todos.map(item => (
           <li key={item.id}>
             <Row {...item} deleteTodo={deleteTodo} updateTodo={updateTodo} />
           </li>
         ))}
+        {!todos[0] && <p className='mb-5 text-xl text-center text-red-500 uppercase'>adicone um to-do !!</p>}
       </ul>
     </section>
   )
